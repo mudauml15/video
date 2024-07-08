@@ -4,6 +4,7 @@ import { sidebarLinks } from "@/constraints";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import Image from "next/image";
 
 const Sidebar = () => {
   const pathname = usePathname();
@@ -26,7 +27,16 @@ const Sidebar = () => {
               { "bg-blue1": isActive }
             )}
           >
-            {link.label}
+            <Image
+            
+            src={link.imgUrl}
+            alt={link.label}
+            width={24}
+            height={24}
+            />
+            <p className="text-lg font-semibold max-lg:hidden">
+              {link.label}
+            </p>
 
             </Link>
 
