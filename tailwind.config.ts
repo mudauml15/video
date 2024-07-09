@@ -20,12 +20,12 @@ const config = {
     extend: {
       colors: {
         dark: {
-          1: '#1C1F2E',
-          2:'#161925',
+          1: '#162b46',
+          2:'#09182e',
         },
 
         blue:{
-            1: '#0E78F9',
+            1: '#46b1b2',
         },
 
         border: "hsl(var(--border))",
